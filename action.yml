@@ -1,0 +1,14 @@
+name: 'my first container action'
+description: 'Guru in the Cloud'
+author: 'Gerben Rohof'
+inputs:
+  myInput:
+    description: 'greeting to use'
+    required: true
+    default: 'Woah, you mde it'
+outputs:
+  myOutput:
+    description: 'total memory'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
